@@ -1,0 +1,295 @@
+
+
+
+
+<div id="produccion" >
+  <div class="container">
+    <h1 [style.color]="colorTitle" class="text-uppercase">Servicios</h1>
+    <div id="mul_educa" class="row mt-4 " *ngIf="showMulti" >
+
+
+
+      <div class ="col-lg-6 col-md-12 col-sm-12 my-auto">
+        <h2 class="text-uppercase text-warning" [innerText]="serTitle1"></h2>
+        <p>Los multimedios o Multimedias educativas (ME), forman parte de los softwares educativos y muchos lo definen como un objeto o producto que usa una combinación de medios: texto, color, gráficas, animaciones, video, sonido, en un mismo entorno, donde el estudiante interactúa con los recursos para mejorar el proceso enseñanza–aprendizaje.</p>
+        <ul>
+          <li> Es una solución excelente de autoestudio.</li>
+          <li> El profesor puede apoyar y complementar el proceso de enseñanza.</li>
+          <li> Proporciona un acceso rápido y económico a fuentes de información. </li>
+          <li> Posibilita el acceso a minilaboratorios virtuales independientes.</li>
+        </ul>
+        <button type="button" class="btn btn-warning btn-lg rounded-5" routerLink="/contacto">Contáctanos</button>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 my-2">
+        <img class="img-fluid rounded-3" [src]="urlImgMulEdu" alt="audiovisual">
+      </div>
+
+    </div>
+
+
+
+    <div id="videos_publi" class="row mt-4" *ngIf="showVideo">
+
+      <div class ="col-lg-6 col-md-12 col-sm-12 my-auto ">
+        <h2 class="text-uppercase text-warning" [innerText]="serTitle2"></h2>
+        <p>Los vídeos publicitarios son spots o píldoras muy breves para promocionar tu mensaje en campañas de tv o redes sociales a través de los anuncios patrocinados. Está claro que la publicidad ha cambiado, y las nuevas plataformas online exigen un nuevo tipo de lenguaje para comunicarnos con nuestros clientes.</p>
+        <ul>
+          <li *ngFor="let item of listaVideos"> {{item}}</li>
+
+        </ul>
+        <button type="button" class="btn btn-warning btn-lg rounded-5" routerLink="/contacto">Contáctanos</button>
+        <br>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 my-2">
+        <img class="img-fluid rounded-3" [src]="urlImgVidPub" alt="audiovisual">
+      </div>
+    </div>
+
+
+    <div id="Streaming" class="row mt-4 " *ngIf="showStrea" >
+
+
+
+      <div class ="col-lg-6 col-md-12 col-sm-12 my-auto ">
+        <h2 class="text-uppercase text-warning" [innerText]="serTitle3"></h2>
+        <p>El concepto de streaming se refiere a cualquier contenido de medios, ya sea en vivo o grabado, que se puede disfrutar en computadoras y aparatos móviles a través de Internet y en tiempo real.</p>
+        <ul>
+          <li *ngFor="let item of listaStreaming"> {{item}}</li>
+
+        </ul>
+        <button type="button" class="btn btn-warning btn-lg rounded-5" routerLink="/contacto">Contáctanos</button>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <img class="img-fluid rounded-3" [src]="urlStreaming" alt="audiovisual">
+      </div>
+    </div>
+
+
+    <div id="capacitaciones" class="row mt-4" *ngIf="showCapa">
+
+      <div class ="col-lg-6 col-md-12 col-sm-12 my-auto  ">
+        <h2 class="text-uppercase text-warning" [innerText]="serTitle4"></h2>
+        <p>En este apartado también encontrarás el estudio de materias como:</p>
+        <ul>
+          <li> Música</li>
+          <li> Video</li>
+          <li> Edición y montaje</li>
+          <li> Animación 2D y 3D</li>
+
+        </ul>
+        <button type="button" class="btn btn-warning btn-lg rounded-5" routerLink="/contacto">Contáctanos</button>
+        <br>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 my-2">
+        <img class="img-fluid rounded-3" [src]="urlCapacitaciones" alt="audiovisual">
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div id="anim_3d" class="row mt-4" *ngIf="showAnim3D">
+
+      <div class ="col-lg-6 col-md-12 col-sm-12 my-auto ">
+        <h2 class="text-uppercase text-warning"  [innerText]="serTitle5"></h2>
+        <p>La animación 3D es una técnica de creación de imágenes en movimiento que utiliza modelos digitales tridimensionales para crear escenas y personajes que pueden ser animados y renderizados en una imagen o video final. Esta técnica se utiliza ampliamente en la industria del cine, televisión y videojuegos, así como en la publicidad y el marketing.</p>
+        <ul>
+          <li> Creacion de escenas.</li>
+          <li> Modelado de personajes</li>
+          <li> Animacion 3D </li>
+          <li> Publicidad 3D</li>
+          <li> Rigging 3D</li>
+          <li> Iluminacion</li>
+        </ul>
+        <button type="button" class="btn btn-warning btn-lg rounded-5" routerLink="/contacto">Contáctanos</button>
+        <br>
+      </div>
+
+
+      <div class="col-lg-6 col-md-12 col-sm-12 my-2">
+        <img class="img-fluid rounded-3" [src]="urlAnimacion3D" alt="audiovisual">
+      </div>
+
+    </div>
+
+
+    <div id="web_design" class="row mt-4" *ngIf="showWebDesign">
+
+      <div class ="col-lg-6 col-md-12 col-sm-12 my-auto ">
+        <h2 class="text-uppercase text-warning"  [innerText]="serTitle6"></h2>
+        <p> En diseño web nos encargamos de la creación y el mantenimiento de sitios web y aplicaciones web. Los desarrolladores web utilizan lenguajes de programación como HTML, CSS y JavaScript para crear y mejorar el contenido y la funcionalidad de los sitios web. También pueden utilizar frameworks y bibliotecas de código, como Ruby on Rails y AngularJS, para acelerar el proceso de desarrollo.</p>
+        <ul>
+          <li> Paginas Web Coorporativas.</li>
+          <li> Web Express</li>
+          <li> Tiendas Online</li>
+          <li> Landing Page</li>
+          <li> Actualizacion Web</li>
+          <li> Analitica Web</li>
+        </ul>
+        <button type="button" class="btn btn-warning btn-lg rounded-5" routerLink="/contacto">Contáctanos</button>
+        <br>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 my-2">
+        <img class="img-fluid rounded-3" [src]="urlWebDesing" alt="audiovisual">
+      </div>
+    </div>
+
+    <div id="photography_services" class="row mt-4" *ngIf="showPhotography">
+
+      <div class ="col-lg-6 col-md-12 col-sm-12 my-auto">
+        <h2 class="text-uppercase text-warning"  [innerText]="serTitle7"></h2>
+        <p>Existen varios tipos de fotografía y cada una responde a determinadas necesidades y ciertos objetivos. Ofrecemos una variedad de servicios fotográficos dependiendo de lo que tu empresa necesite. Los principales son:</p>
+        <ul>
+          <li>Fotografia Coorporativas.</li>
+          <li>Fotografia de Moda</li>
+          <li>Fotografia Publicitario</li>
+          <li>Fotografia para Web</li>
+          <li> Fotografia para Eventos</li>
+        </ul>
+        <button type="button" class="btn btn-warning btn-lg rounded-5" routerLink="/contacto">Contáctanos</button>
+        <br>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 my-2">
+        <img class="img-fluid rounded-3" [src]="urlPhotography" alt="audiovisual">
+      </div>
+    </div>
+
+    <div id="produccion_audiov" class="row mt-4" *ngIf="showAudio">
+
+      <div class ="col-lg-6 col-md-12 col-sm-12 my-auto">
+        <h2 class="text-uppercase text-warning"  [innerText]="serTitle8"></h2>
+        <p>Ofrecemos una gama completa de servicios profesionales de edición de audio que están diseñados para ahorrarle tiempo y dinero sin sacrificar ni un ápice de calidad. Si está buscando servicios de edición de audio digital, estos son solo algunos de los muchos servicios que ofrecemos:</p>
+        <ul>
+          <li>Mezcla de Audio</li>
+          <li>Locuciones</li>
+          <li>Ediciones de Audio</li>
+          <li>Audio Directo</li>
+          <li>Producción Musical</li>
+        </ul>
+        <button type="button" class="btn btn-warning btn-lg rounded-5" routerLink="/contacto">Contáctanos</button>
+        <br>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 my-2">
+        <img class="img-fluid rounded-3" [src]="urlAudio" alt="audiovisual">
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+  <hr>
+  <div id="botonMovimiento" class="col align-items-center text-center" >
+    <div class="col ">
+      <button type="button" class="btn btn-light mx-1 my-2 " (click)="cambioMulti()">Multimedia</button>
+      <button type="button" class="btn btn-light mx-1 my-2 " (click)="cambioVideo()">Videos</button>
+      <button type="button" class="btn btn-light mx-1 my-2 " (click)="cambioStrea()">Streaming</button>
+      <button type="button" class="btn btn-light mx-1 my-2 " (click)="cambioCapa()">Capacitaciones</button>
+      <button type="button" class="btn btn-light mx-1 my-2 " (click)="cambioAnim3D()">Animaciones 3D</button>
+      <button type="button" class="btn btn-light mx-1 my-2 " (click)="cambioWebDesign()">Diseño Web</button>
+      <button type="button" class="btn btn-light mx-1 my-2 " (click)="cambioPhotography()">Fotografía</button>
+      <button type="button" class="btn btn-light mx-1 my-2 " (click)="cambioAudio()">Audio</button>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" *ngIf="showForm">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12 mx-auto pt-5">
+      <div  id="nombre" class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Nombre y Apellido" aria-label="Username" aria-describedby="basic-addon1"  [(ngModel)]="user.nombre" name="nombre">
+      </div>
+
+      <div  class=" input-group mb-3">
+        <input type="number" class="form-control" placeholder="Teléfono" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="user.telefono" name="telefono">
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="e-mail" aria-label="Recipient's username" aria-describedby="basic-addon2" [(ngModel)]="user.email" name="email">
+        <span class="input-group-text" id="basic-addon2">@example.com</span>
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-text">Mensaje</span>
+        <textarea class="form-control" aria-label="With textarea" [(ngModel)]="user.mensaje" name="mensaje"></textarea>
+      </div>
+      <div class=" d-grid gap-2 d-md-flex justify-content-md-end ">
+        <button type="button" class="btn btn-warning mx-1 my-2" (click)="enviarMensaje()"> Enviar Mensaje</button>
+      </div>
+    </div>
+
+
+    <div class=" mb-3">
+
+
+      <div id="confirmacion" class="alert alert-success" role="alert" *ngIf="escondido">
+        Saludos  {{user.nombre}}  tu mensaje " {{user.mensaje}} " se ha enviado correctamente!, revisa tu correo  {{user.email}}  y el sms enviado al número  {{user.telefono}} .
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+  <div class="container px-4" id="featured-3">
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 ">
+      <div class="feature col align-items-center text-center">
+        <div class="col m-1 p-4 border shadow-lg">
+          <div class="feature-icon d-inline-flex mx-auto fs-2">
+            <img src="/assets/imagen/icono1.png" width="15" height="15" alt="cameraman">
+          </div>
+          <div class="text-bg-warning mx-auto w-50 p-1"></div>
+          <h3 class="fs-2 pt-4">Encaminados al Éxito</h3>
+          <p>
+            Contamos con profesionales en diversas áreas de del campo audiovisual que se divierten y aman lo que hacen.
+          </p>
+        </div>
+      </div>
+      <div class="feature col align-items-center text-center">
+        <div class="col m-1 p-4 border shadow-lg">
+          <div class="feature-icon d-inline-flex mx-auto fs-2">
+            <img src="/assets/imagen/icono2.png" width="15" height="15">
+          </div>
+          <div class="text-bg-warning w-50 mx-auto p-1"></div>
+          <h3 class="fs-2 pt-4">Excelencia Multimedia</h3>
+          <p>
+            Nuestro único objetivo es crear el mejor contenido multimedia para tu negocio y hacer que alcance los más altos estándares.
+          </p>
+        </div>
+      </div>
+      <div class="feature col align-items-center text-center">
+        <div class="col m-1 p-4 border shadow-lg">
+          <div class="feature-icon d-inline-flex mx-auto fs-2">
+            <img src="/assets/imagen/icono3.png" width="15" height="15" alt="cameraman" >
+          </div>
+          <div class="text-bg-warning w-50 mx-auto p-1"></div>
+          <h3 class="fs-2 pt-4">Soluciones Innovadoras</h3>
+          <p class="pb-4">
+            Creamos las mejores estrategias audiovisuales para dar soluciones a la problemática social.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+

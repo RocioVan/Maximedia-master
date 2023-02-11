@@ -1,0 +1,154 @@
+<div id="trabajos" class="container py-5">
+
+  <div id="trabaj" class="container mx-auto pt-3">
+    <div class="row featurette" *ngIf="!showVermas">
+      <div class="col-md-9">
+        <h1 [style.color]="colorTitle" class="text-uppercase">Portafolio</h1>
+        <p class="lead">Siempre dando lo mejor con grandes marcas.</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="row justify-content-center" *ngIf="!showVermas">
+    <div class="col-sm-12 col-md-12 col-lg-4 py-3 ">
+      <div class="card" style="width: 18rem; margin:auto">
+          <img [src]="cliente1" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pixar</h5>
+                <p class="card-text">Pixar,estudio cinematográfico de animación subsidario de Walt Disney Studios.</p>
+                 <a href="#" class="btn btn-primary" (click)="alerta()">Conocer más</a>
+              </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-12 col-lg-4 py-3 ">
+      <div class="card" style="width: 18rem;margin:auto">
+        <img [src]="cliente2" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Zara</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary" (click)="alerta()" >Conocer más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-12 col-lg-4 py-3 ">
+      <div class="card" style="width: 18rem;margin:auto">
+        <img [src]="cliente3" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fanta</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary"(click)="alerta()">Conocer más</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<div id="vermas" class="container" *ngIf="showVermas">
+
+  <div class="row justify-content-center">
+    <div class="col-sm-12 col-md-6 col-lg-3 py-2 ">
+      <div class="card" style="width: 13rem; margin:auto">
+        <img [src]="cliente4" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pepsi</h5>
+          <p class="card-text">Some quick example text to build on the card title.</p>
+          <a href="#" class="btn btn-primary"(click)="alerta()">Conocer más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-3 py-2 ">
+      <div class="card" style="width: 13rem;margin:auto">
+        <img [src]="cliente5" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">McDonalds</h5>
+          <p class="card-text">Some quick example text to build on the card title.</p>
+          <a href="#" class="btn btn-primary"(click)="alerta()">Conocer más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-3 py-2 ">
+      <div class="card" style="width: 13rem;margin:auto">
+        <img [src]="cliente6" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hyundai</h5>
+          <p class="card-text">Some quick example text to build on the card title.</p>
+          <a href="#" class="btn btn-primary"(click)="alerta()">Conocer más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-3 py-2 ">
+      <div class="card" style="width: 13rem;margin:auto">
+        <img [src]="cliente7" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Adidas</h5>
+          <p class="card-text">Some quick example text to build on the card.</p>
+          <a href="#" class="btn btn-primary"(click)="alerta()">Conocer más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-3 py-2 ">
+      <div class="card" style="width: 13rem; margin:auto">
+        <img [src]="cliente8" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Nike</h5>
+          <p class="card-text">Some quick example text to build on the card title.</p>
+          <a href="#" class="btn btn-primary"(click)="alerta()">Conocer más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-3 py-2 ">
+      <div class="card" style="width: 13rem;margin:auto">
+        <img [src]="cliente9" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Corona</h5>
+          <p class="card-text">Some quick example text to build on the card title.</p>
+          <a href="#" class="btn btn-primary"(click)="alerta()">Conocer más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-3 py-2 ">
+      <div class="card" style="width: 13rem;margin:auto">
+        <img [src]="cliente10" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PS4</h5>
+          <p class="card-text">Some quick example text to build on the card title.</p>
+          <a href="#" class="btn btn-primary"(click)="alerta()">Conocer más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-3 py-2 ">
+      <div class="card" style="width: 13rem;margin:auto">
+        <img [src]="cliente11" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Apple</h5>
+          <p class="card-text">Some quick example text to build on the card.</p>
+          <a href="#" class="btn btn-primary"(click)="alerta()">Conocer más</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container d-grid gap-2 d-md-flex justify-content-md-end">
+  <button type="button" class="btn btn btn-warning" (click)="cambioVermas()">
+    {{ocultar}}
+  </button>
+</div>
